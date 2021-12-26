@@ -19,16 +19,19 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    height: 3em;
+    height: 3.4em;
     width: 100%;
-    background-color: #f7b34d54;
+    background-color: #f7b34d00;
     box-sizing: border-box;
     transition: background-color 0.9s ease-out;
+    color: rgb(22, 22, 22);
 }
 
 nav.scroll {
-    background-color: #ffffffbe;
-    color: rgb(0, 0, 0);
+    background-color: #ffffffe1;
+    color: rgb(194, 185, 185);
+    height: 3.8em;
+    border-bottom: 1px solid rgba(107, 106, 106, 0.281);
 }
 
 ul {
@@ -40,14 +43,143 @@ li {
     display: inline-block;
     padding: 1% 1%;
     list-style-type: none;
+   
+}
+li:hover{
+  border-bottom:5px solid black ;
 }
 
 ul li a {
-    color: black;
+   color: rgb(8, 8, 8);
     text-decoration: none;
 }
 
-ul li a:hover {
-    color: rgb(110, 66, 66);
+ul li  a:hover {
+    color: rgb(68, 62, 62);
     text-decoration: none;
+    padding-bottom: 10px;
+    
+}
+
+
+.backc{
+ background-size: cover;
+ width: 100%;
+ height: 60%;
+ -webkit-box-shadow: 2px 0px 26px 0px rgba(107,107,107,1);
+ -moz-box-shadow: 2px 0px 26px 0px rgba(107,107,107,1);
+ box-shadow: 2px 0px 26px 0px rgba(107,107,107,1);
+}
+
+.abt{
+  margin: auto;
+  text-align: center;
+}
+
+
+.divider .outer-line {
+  width: 20%;
+  border-bottom: 1px solid #ddd;
+}
+.divider span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.divider .fa {
+  font-size: 20px;
+  margin: 0 25px;
+}
+
+
+ .about-right-side {
+  margin-top: 22px;
+  margin-right: 22px;
+  position: relative;
+  display: inline-block;
+}
+
+
+.about-right-side {
+  margin-top: 22px;
+  margin-left: 22px;
+  position: relative;
+  display: inline-block;
+}
+ .about-right-side:before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  transform: translate3d(22px, -22px, -22px);
+  border-radius: 4px;
+  border-top: 2px solid rgb(255, 111, 0);
+  border-right: 2px solid rgb(255, 111, 0);
+}
+
+ .about-content {
+  margin-top: 40px;
+}
+
+hr {
+  margin-top: 25px;
+
+}
+
+.about-content .title-about {
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.bg{
+  background-size: cover;
+  height: 500px;
+  width: 400px;
+  z-index: -1030;
+
+
+}
+
+.logo::before {
+  position: absolute;
+  content: "";
+  top: -35px;
+  background: url("../img/oleaon.png");
+  width: 500px;
+  height: 500px;
+  left: -40px;
+  background-repeat: no-repeat;
+}
+
+.logo::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  background: url("../img/oleaon.png");
+  background-size: cover;
+  width:500px;
+  height:500px;
+  left: -210px;
+  background-repeat: no-repeat;
+ display: inline-flex;
+  padding: 0%;
+  z-index: -1030;
+}
+.fullbody{
+  padding: 0px 15px 50px !important;
+}
+.phn{
+  padding: 2% 1% 3% 1%;
+  height: 400px;
+  width: 250px;
+background-color: rgba(196, 194, 194, 0.904);
+border-radius: 5%;
+border:1px solid  rgba(116, 113, 113, 0.479);
+-webkit-box-shadow: 0px 5px 34px -8px rgba(74,74,74,0.9);
+-moz-box-shadow: 0px 5px 34px -8px rgba(74,74,74,0.9);
+box-shadow: 0px 5px 34px -8px rgba(74,74,74,0.9);
 }
