@@ -6,42 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-      
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 </head>
 
 <body>
 
-    <nav id="navbar" class=" p-0">
+    <!--  <nav id="navbar" class=" p-0">
         <div class="row m-0">
             <div class="col-lg-1 col-md-1 col-sm-2 m-0 p-0">
                 <img class="card-img m-1 ms-4" style="width: 40px; height: 40px;" src="img/oleaon.png">
             </div>
-         
-            
             <div class="col-lg-11 col-md-11 col-sm-10  fixed-top m-0">
-        
-                <ul class="d-flex justify-content-end topnav" id="myTopnav">
-                    <li><span><i class="fas fa-home"></i></span> <a href="#home">Home</a></li>
-                    <li><span><i class="fas fa-user px-2"></i></span><a href="#news">About</a></li>
-                    <li><span><i class="fas fa-concierge-bell px-2"></i></span><a href="#contact">Service</a></li>
-                    <li><span><i class="fas fa-project-diagram px-2"></i></span><a href="#about">Prject</a></li>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fas fa-bars"></i>
-                      </a>
+                <ul class="d-flex justify-content-end">
+                    <li> <a href="#home">Home <span><i class="fas fa-home"></i></span></a></li>
+                    <li><a href="#news">About <span><i class="fas fa-user px-2"></i></span></a></li>
+                    <li><a href="#contact">Service<span><i class="fas fa-concierge-bell px-2"></i></span></a></li>
+                    <li><a href="#about">Prject<span><i class="fas fa-project-diagram px-2"></i></span></a></li>
+
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <div class="fullbody">
+
+        <!--      <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-white me-auto mb-2 mb-lg-0">
+                        <li class="nav-link"></li>
+                        <a class="nav-link" href="#">Home</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1">Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+
+
+        <nav id="navbar">
+            <div>
+                <img class="mx-3" src="img/oleaon.png" alt="Logo Image">
+            </div>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-linkss mt-2">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
 
         <img class="backc" src="img/head.gif">
 
@@ -57,14 +96,13 @@
                 <span class="outer-line"></span>
             </div>
 
-            <div class="row about-content m-0">
+            <div class="row about-content m-0 mt-5">
                 <div class="col-2 col-md-2 col-sm-0"></div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="logo">
                         <h3 class="text-start ">We are Oleaon</h3>
                         <hr>
-                        <p class="text-start">Oleaon Technology limited is an International based Software company,
-                            working to create Reliable and affordable software solutions for global clients.</p>
+                        <p class="text-start">Oleaon Technology limited is an International based Software company, working to create Reliable and affordable software solutions for global clients.</p>
                     </div>
                 </div>
 
@@ -90,29 +128,25 @@
                 <span><i class="fas fa-stars fa-2x px-4"></i></span>
                 <span class="outer-line"></span>
             </div>
-        
+
 
             <div class="row">
                 <div class="col-lg-5 col-md-6 col-sm-12 d-flex justify-content-center " style="padding-top:5%">
                     <div class="phn">
 
-                     
-                            <img class="mySlides card-img" src="img/download.jpg" style="width:100%; height:360px;">
-                            <img class="mySlides card-img" src="img/VD1.jpg" style="width:100%; height:360px;">
-                            <img class="mySlides card-img" src="img/VD3.jpg" style="width:100%; height:360px;">
-                   
+
+                        <img class="mySlides card-img" src="img/download.jpg" style="width:100%; height:360px;">
+                        <img class="mySlides card-img" src="img/VD1.jpg" style="width:100%; height:360px;">
+                        <img class="mySlides card-img" src="img/VD3.jpg" style="width:100%; height:360px;">
+
                     </div>
                 </div>
 
                 <div class="col-lg-7 col-md-6 col-sm-12 d-flex justify-content-center py-5">
                     <div class="contatvd" style="width:100%; height: 500px; ">
 
-                        <h1 style="color: rgb(202, 29, 29); text-align: left;"><img style="width: 20%; height: 20%;"
-                                src="img/Appicon.png"> VAMPIRE DYNASTY</h1>
-                        <p style="color: rgb(97, 25, 7); padding: 3% 2%; text-align: left;">The vampire is an immortal
-                            creature who always has the hunger for blood which gives the strength to survive, lives in
-                            shadows because of their inability to go in sunlight which makes them the King of darkness,
-                            capable to control
+                        <h1 style="color: rgb(202, 29, 29); text-align: left;"><img style="width: 20%; height: 20%;" src="img/Appicon.png"> VAMPIRE DYNASTY</h1>
+                        <p style="color: rgb(97, 25, 7); padding: 3% 2%; text-align: left;">The vampire is an immortal creature who always has the hunger for blood which gives the strength to survive, lives in shadows because of their inability to go in sunlight which makes them the King of darkness, capable to control
                             supernatural abilities, possesses special abilities and powers to rule upon the dynasty.</p>
 
                         <p style="color: rgb(97, 25, 7); border-left:5px solid rgb(238, 169, 20) ;"><i>" Everybody loves
@@ -162,8 +196,7 @@
                                     <img class="thumbnail" src="img/head.gif" alt="コイン表">
                                 </div>
                                 <div class="back">
-                                    <img class="thumbnail thumbnail-hover"
-                                        src="https://82mou.github.io/src/images/coin-ura.jpg" alt="コイン裏">
+                                    <img class="thumbnail thumbnail-hover" src="https://82mou.github.io/src/images/coin-ura.jpg" alt="コイン裏">
                                 </div>
                             </div>
                         </div>
@@ -197,14 +230,6 @@
 
                 </div>
             </div>
-
-
-
-
-
-
-
-
 
             <div class="row bfcont">
                 <!-- start count stats -->
@@ -252,8 +277,6 @@
 
             </div>
 
-
-
             <div class="mycol">
                 <div class="row">
                     <div class="container p-5">
@@ -266,31 +289,22 @@
                             <span><i class="fas fa-cogs fa-2x px-4"></i></span>
                             <span class="outer-line"></span>
                         </div>
-
-                        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3"
-                            style="padding-top:5%;">
+                        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3" style="padding-top:5%;">
                             <div class="col">
                                 <div class="card h-100 shadow-sm">
                                     <div class="text-center">
                                         <div class="img-hover-zoom img-hover-zoom--colorize">
-                                            <img src="https://source.unsplash.com/rDEOVtE7vOs/600x600"
-                                                alt="Another Image zoom-on-hover effect">
+                                            <img src="https://source.unsplash.com/rDEOVtE7vOs/600x600" alt="Another Image zoom-on-hover effect">
                                         </div>
-
                                     </div>
-
                                     <div class="card-body">
                                         <div class="clearfix mb-3">
                                         </div>
                                         <div class="my-2 text-center">
-
                                             <h1>Mia Wallace</h1>
-
                                         </div>
                                         <div class="mb-3">
-
                                             <h2 class="text-uppercase text-center role">Senior Frontend Developer</h2>
-
                                         </div>
                                         <div class="box">
                                             <div>
@@ -299,44 +313,27 @@
                                                     <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
                                                     <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
                                                 </ul>
-
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card h-100 shadow-sm">
                                     <div class="text-center">
-
-
                                         <div class="img-hover-zoom img-hover-zoom--colorize">
-                                            <img src="https://source.unsplash.com/XHVpWcr5grQ/600x600"
-                                                alt="Another Image zoom-on-hover effect">
+                                            <img src="https://source.unsplash.com/XHVpWcr5grQ/600x600" alt="Another Image zoom-on-hover effect">
                                         </div>
-
                                     </div>
-
                                     <div class="card-body">
                                         <div class="clearfix mb-3">
-
-
-
-
                                         </div>
-
-
                                         <div class="my-2 text-center">
-
                                             <h1>Vincent Vega</h1>
-
                                         </div>
                                         <div class="mb-3">
 
                                             <h2 class="text-uppercase text-center role">SEO Specialist</h2>
-
                                         </div>
                                         <div class="box">
                                             <div>
@@ -348,41 +345,26 @@
 
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card h-100 shadow-sm">
                                     <div class="text-center">
-
-
                                         <div class="img-hover-zoom img-hover-zoom--colorize">
-                                            <img src="https://source.unsplash.com/n4KewLKFOZw/600x600"
-                                                alt="Another Image zoom-on-hover effect">
+                                            <img src="https://source.unsplash.com/n4KewLKFOZw/600x600" alt="Another Image zoom-on-hover effect">
                                         </div>
-
                                     </div>
-
                                     <div class="card-body">
                                         <div class="clearfix mb-3">
-
-
-
                                         </div>
-
-
                                         <div class="my-2 text-center">
 
                                             <h1>Mr. Wolf</h1>
-
                                         </div>
                                         <div class="mb-3">
-
                                             <h2 class="text-uppercase text-center role">DIGITAL MARKETING SPECIALIST
                                             </h2>
-
                                         </div>
                                         <div class="box">
                                             <div>
@@ -394,42 +376,24 @@
 
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col">
                                 <div class="card h-100 shadow-sm">
                                     <div class="text-center">
-
-
                                         <div class="img-hover-zoom img-hover-zoom--colorize">
-                                            <img src="https://source.unsplash.com/XHVpWcr5grQ/600x600"
-                                                alt="Another Image zoom-on-hover effect">
+                                            <img src="https://source.unsplash.com/XHVpWcr5grQ/600x600" alt="Another Image zoom-on-hover effect">
                                         </div>
-
                                     </div>
-
                                     <div class="card-body">
                                         <div class="clearfix mb-3">
-
-
-
-
                                         </div>
-
-
                                         <div class="my-2 text-center">
-
                                             <h1>Vincent Vega</h1>
-
                                         </div>
                                         <div class="mb-3">
-
                                             <h2 class="text-uppercase text-center role">SEO Specialist</h2>
-
                                         </div>
                                         <div class="box">
                                             <div>
@@ -438,41 +402,27 @@
                                                     <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
                                                     <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
                                                 </ul>
-
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card h-100 shadow-sm">
                                     <div class="text-center">
-
-
                                         <div class="img-hover-zoom img-hover-zoom--colorize">
                                             <img src="img/sad.png" alt="Another Image zoom-on-hover effect">
                                         </div>
-
                                     </div>
-
                                     <div class="card-body">
                                         <div class="clearfix mb-3">
-
-
                                         </div>
-
-
                                         <div class="my-2 text-center">
-
                                             <h1>O-Ren Ishii</h1>
-
                                         </div>
                                         <div class="mb-3">
 
                                             <h2 class="text-uppercase text-center role">Web Developer</h2>
-
                                         </div>
                                         <div class="box">
                                             <div>
@@ -481,35 +431,23 @@
                                                     <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
                                                     <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
                                                 </ul>
-
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
-
-
             <div id='subscribe-css'>
                 <p class='subscribe-note'><span>Our Newsletter</span></p>
                 <h4><span class="text-light">keep in topuch</span> </h4>
-                <p class="text-light px-5 mx-5">Sign up to our newsletter subscription and be the first to know about
-                    Important news & Amazing offers & Discounts</p>
+                <p class="text-light px-5 mx-5">Sign up to our newsletter subscription and be the first to know about Important news & Amazing offers & Discounts</p>
                 <div class='subscribe-wrapper'>
                     <div class='subscribe-form'>
                         <div class="fomcol">
                             <form action="#" class='subscribe-form' method='post'>
-
-
                                 <input type="email" name="email" id="email" placeholder="example@example.com" />
                                 <input type="submit" value="submit">
                             </form>
@@ -519,9 +457,6 @@
                 </div>
             </div>
         </div>
-
-
-
         <h1 style="color: rgb(248, 104, 52); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                         font-weight: bold; padding: 13% 0% 0% 1%; text-align: center;">
             MAP</h1>
@@ -531,38 +466,23 @@
             <span><i class="fas fa-cogs fa-2x px-4"></i></span>
             <span class="outer-line"></span>
         </div>
-
         <div class="info-map">
             <div class="google-map">
                 <div class="gmap_container">
-
-
-
                     <div id="gmap_canvas" class="map" style="position: relative; overflow: hidden;">
-
-                        <object style="border:0; height: 450px; width: 100%;"
-                            data="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d228.26661756158398!2d90.38141318928766!3d23.73789628191835!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1632313690669!5m2!1sen!2sbd"
-                            width="600" height="450" allowfullscreen="" loading="lazy"></object>
-
+                        <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d228.26661756158398!2d90.38141318928766!3d23.73789628191835!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1632313690669!5m2!1sen!2sbd" width="600"
+                            height="450" allowfullscreen="" loading="lazy"></object>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
         <footer class="footer text-center">
             <!-- Container Starts -->
             <div class="container">
                 <!-- Copyright Text Starts -->
                 <p>Oleaon- We make it happen</p>
                 <p>
-                    &copy; Copyright 2021 Oleaon and Designed with <span class="heart">&#10084;</span> by <a
-                        target="_blank" href="https://oleaon.com/">Team Oleaon </a>
+                    &copy; Copyright 2021 Oleaon and Designed with <span class="heart">&#10084;</span> by <a target="_blank" href="https://oleaon.com/">Team Oleaon </a>
                 </p>
                 <!-- Copyright Text Ends -->
                 <!-- Social Media Links Starts -->
@@ -595,46 +515,46 @@
             </div>
             <!-- Container Ends -->
         </footer>
-
     </div>
-
-
     </div>
-
-
-
-
     <script src="js/bootstrap.js"></script>
     <script src="js/myjs.js"></script>
 
     <script>
         var myIndex = 0;
         carousel();
-        
+
         function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2000); // Change image every 2 seconds
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
         }
+    </script>
 
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinkss = document.querySelector(".nav-linkss");
+        const links = document.querySelectorAll(".nav-linkss li");
 
-        function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+        hamburger.addEventListener('click', () => {
+            //Animate Links
+            navLinkss.classList.toggle("open");
+            links.forEach(link => {
+                link.classList.toggle("fadee");
+            });
 
-  
-        </script>
+            //Hamburger Animation
+            hamburger.classList.toggle("toggle");
+        });
+    </script>
 </body>
 
 </html>
