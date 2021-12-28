@@ -8,8 +8,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+      
 </head>
 
 <body>
@@ -19,13 +24,18 @@
             <div class="col-lg-1 col-md-1 col-sm-2 m-0 p-0">
                 <img class="card-img m-1 ms-4" style="width: 40px; height: 40px;" src="img/oleaon.png">
             </div>
-
+         
+            
             <div class="col-lg-11 col-md-11 col-sm-10  fixed-top m-0">
-                <ul class="d-flex justify-content-end">
+        
+                <ul class="d-flex justify-content-end topnav" id="myTopnav">
                     <li><span><i class="fas fa-home"></i></span> <a href="#home">Home</a></li>
                     <li><span><i class="fas fa-user px-2"></i></span><a href="#news">About</a></li>
                     <li><span><i class="fas fa-concierge-bell px-2"></i></span><a href="#contact">Service</a></li>
                     <li><span><i class="fas fa-project-diagram px-2"></i></span><a href="#about">Prject</a></li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fas fa-bars"></i>
+                      </a>
                 </ul>
             </div>
         </div>
@@ -53,13 +63,14 @@
                     <div class="logo">
                         <h3 class="text-start ">We are Oleaon</h3>
                         <hr>
-                        <p class="text-start">Oleaon Technology limited is an International based Software company, working to create Reliable and affordable software solutions for global clients.</p>
+                        <p class="text-start">Oleaon Technology limited is an International based Software company,
+                            working to create Reliable and affordable software solutions for global clients.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-5 col-md-4 col-sm-12 about-right">
                     <div class="about-right-side">
-                        <img src="img/about.jpg">
+                        <img class="card-img" src="img/about.jpg">
                     </div>
                 </div>
                 <div class="col-1 col-md-1 col-sm-0 p-0 m-0"></div>
@@ -79,56 +90,51 @@
                 <span><i class="fas fa-stars fa-2x px-4"></i></span>
                 <span class="outer-line"></span>
             </div>
-
+        
 
             <div class="row">
                 <div class="col-lg-5 col-md-6 col-sm-12 d-flex justify-content-center " style="padding-top:5%">
                     <div class="phn">
-                        <img style="width:100%; height:100%;" src="img/download.jpg">
+
+                     
+                            <img class="mySlides card-img" src="img/download.jpg" style="width:100%; height:360px;">
+                            <img class="mySlides card-img" src="img/VD1.jpg" style="width:100%; height:360px;">
+                            <img class="mySlides card-img" src="img/VD3.jpg" style="width:100%; height:360px;">
+                   
                     </div>
                 </div>
 
                 <div class="col-lg-7 col-md-6 col-sm-12 d-flex justify-content-center py-5">
                     <div class="contatvd" style="width:100%; height: 500px; ">
 
-                        <h1 style="color: rgb(202, 29, 29); text-align: left;"><img style="width: 20%; height: 20%;" src="img/Appicon.png"> VAMPIRE DYNASTY</h1>
-                        <p style="color: rgb(97, 25, 7); padding: 3% 2%; text-align: left;">The vampire is an immortal creature who always has the hunger for blood which gives the strength to survive, lives in shadows because of their inability to go in sunlight which makes them the King of darkness, capable to control
+                        <h1 style="color: rgb(202, 29, 29); text-align: left;"><img style="width: 20%; height: 20%;"
+                                src="img/Appicon.png"> VAMPIRE DYNASTY</h1>
+                        <p style="color: rgb(97, 25, 7); padding: 3% 2%; text-align: left;">The vampire is an immortal
+                            creature who always has the hunger for blood which gives the strength to survive, lives in
+                            shadows because of their inability to go in sunlight which makes them the King of darkness,
+                            capable to control
                             supernatural abilities, possesses special abilities and powers to rule upon the dynasty.</p>
 
-                        <p style="color: rgb(97, 25, 7); border-left:5px solid rgb(238, 169, 20) ;"><i>" Everybody loves to live in fantasy. Imagine a world where you are a vampire, you have inhuman strength, powers and you are growing rapidly, becoming more powerful day by day......Owning the space." </i></p>
+                        <p style="color: rgb(97, 25, 7); border-left:5px solid rgb(238, 169, 20) ;"><i>" Everybody loves
+                                to live in fantasy. Imagine a world where you are a vampire, you have inhuman strength,
+                                powers and you are growing rapidly, becoming more powerful day by day......Owning the
+                                space." </i></p>
 
                         <div class="social-icons">
                             <ul class="social">
-                                <li>
+                                <li class="bg1">
                                     <a href="website.html"><span><i class="fab fa-facebook-f"></i></span></a>
                                 </li>
-                                <li>
-                                    <a href="website.html"><span><i class="fab fa-facebook-f"></i></span></a>
+                                <li class="bg2">
+                                    <a href="website.html"><span><i class="fab fa-twitter"></i></span></a>
                                 </li>
-                                <li>
-                                    <a href="website.html"><span><i class="fab fa-facebook-f"></i></span></a>
+                                <li class="bg3">
+                                    <a href="website.html"><span><i class="fab fa-pinterest-p"></i></span></a>
                                 </li>
-                                <li>
-                                    <a href="website.html"><span><i class="fab fa-facebook-f"></i></span></a>
+                                <li class="bg4">
+                                    <a href="website.html"><span><i class="fab fa-youtube"></i></span></a>
                                 </li>
-                                <li>
-                                    <a href="website.html"><span><i class="fab fa-facebook-f"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="website.html"><span><i class="fab fa-facebook-f"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="website.html"><span><i class="fab fa-facebook-f"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="website.html"><span><i class="fab fa-facebook-f"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="website.html"><span><i class="fab fa-facebook-f"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="website.html"><span><i class="fab fa-facebook-f"></i></span></a>
-                                </li>
+
                             </ul>
                         </div>
 
@@ -136,13 +142,499 @@
                 </div>
             </div>
 
+
+            <h1 style="color: rgb(248, 104, 52); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                   font-weight: bold; padding: 13% 0% 0% 1%;">
+                Our Services</h1>
+            <P>WHAT WE DO</P>
+            <div class="divider text-center">
+                <span class="outer-line"></span>
+                <span><i class="fas fa-cogs fa-2x px-4"></i></span>
+                <span class="outer-line"></span>
+            </div>
+
+            <div class="mycol">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4  col-sm-12" style="padding-top:5%">
+                        <div class="flip">
+                            <div class="flip-inner">
+                                <div class="front">
+                                    <img class="thumbnail" src="img/head.gif" alt="コイン表">
+                                </div>
+                                <div class="back">
+                                    <img class="thumbnail thumbnail-hover"
+                                        src="https://82mou.github.io/src/images/coin-ura.jpg" alt="コイン裏">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4  col-sm-12" style="padding-top:5%">
+                        <div class="flip">
+                            <div class="flip-inner">
+                                <div class="front">
+                                    <img class="thumbnail" src="img/head.gif" alt="コイン表">
+                                </div>
+                                <div class="back">
+                                    <img class="thumbnail thumbnail-hover" src="img/Appicon.png" alt="コイン裏">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4  col-sm-12" style="padding-top:5%">
+                        <div class="flip">
+                            <div class="flip-inner">
+                                <div class="front">
+                                    <img class="thumbnail" src="img/head.gif" alt="コイン表">
+                                </div>
+                                <div class="back">
+                                    <img class="thumbnail thumbnail-hover" src="img/Appicon.png" alt="コイン裏">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="row bfcont">
+                <!-- start count stats -->
+                <h1 style="color: rgb(255, 255, 255); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                font-weight: bold; padding: 5% 0% 0% 1%;  text-shadow: 2px 2px 17px   #1a1212; ">
+                    Cool Facts</h1>
+                <p>OUR PROGRESS</p>
+                <section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
+                    <div class="container">
+                        <div class="row" style="padding-bottom: 5%;">
+
+                            <div class="col-lg-3 stats ">
+                                <i class="fa fa-code" aria-hidden="true"></i>
+                                <div class="counting" data-count="900000">0</div>
+                                <h5>Lines of code</h5>
+                            </div>
+
+                            <div class="col-lg-3 stats">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <div class="counting" data-count="280">0</div>
+                                <h5>Projects done</h5>
+                            </div>
+
+                            <div class="col-lg-3 stats">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <div class="counting" data-count="75">0</div>
+                                <h5>Happy clients</h5>
+                            </div>
+
+                            <div class="col-lg-3 stats">
+                                <i class="fa fa-coffee" aria-hidden="true"></i>
+                                <div class="counting" data-count="999">0</div>
+                                <h5>Cups of coffee</h5>
+                            </div>
+
+
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container -->
+
+                </section>
+
+                <!-- end cont stats -->
+
+            </div>
+
+
+
+            <div class="mycol">
+                <div class="row">
+                    <div class="container p-5">
+                        <h1 style="color: rgb(248, 104, 52); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-weight: bold; padding: 13% 0% 0% 1%;">
+                            Our Team</h1>
+                        <P>WHAT WE DO</P>
+                        <div class="divider text-center">
+                            <span class="outer-line"></span>
+                            <span><i class="fas fa-cogs fa-2x px-4"></i></span>
+                            <span class="outer-line"></span>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3"
+                            style="padding-top:5%;">
+                            <div class="col">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="text-center">
+                                        <div class="img-hover-zoom img-hover-zoom--colorize">
+                                            <img src="https://source.unsplash.com/rDEOVtE7vOs/600x600"
+                                                alt="Another Image zoom-on-hover effect">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div class="clearfix mb-3">
+                                        </div>
+                                        <div class="my-2 text-center">
+
+                                            <h1>Mia Wallace</h1>
+
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <h2 class="text-uppercase text-center role">Senior Frontend Developer</h2>
+
+                                        </div>
+                                        <div class="box">
+                                            <div>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                                                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                                                    <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="text-center">
+
+
+                                        <div class="img-hover-zoom img-hover-zoom--colorize">
+                                            <img src="https://source.unsplash.com/XHVpWcr5grQ/600x600"
+                                                alt="Another Image zoom-on-hover effect">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div class="clearfix mb-3">
+
+
+
+
+                                        </div>
+
+
+                                        <div class="my-2 text-center">
+
+                                            <h1>Vincent Vega</h1>
+
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <h2 class="text-uppercase text-center role">SEO Specialist</h2>
+
+                                        </div>
+                                        <div class="box">
+                                            <div>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                                                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                                                    <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="text-center">
+
+
+                                        <div class="img-hover-zoom img-hover-zoom--colorize">
+                                            <img src="https://source.unsplash.com/n4KewLKFOZw/600x600"
+                                                alt="Another Image zoom-on-hover effect">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div class="clearfix mb-3">
+
+
+
+                                        </div>
+
+
+                                        <div class="my-2 text-center">
+
+                                            <h1>Mr. Wolf</h1>
+
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <h2 class="text-uppercase text-center role">DIGITAL MARKETING SPECIALIST
+                                            </h2>
+
+                                        </div>
+                                        <div class="box">
+                                            <div>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                                                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                                                    <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="text-center">
+
+
+                                        <div class="img-hover-zoom img-hover-zoom--colorize">
+                                            <img src="https://source.unsplash.com/XHVpWcr5grQ/600x600"
+                                                alt="Another Image zoom-on-hover effect">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div class="clearfix mb-3">
+
+
+
+
+                                        </div>
+
+
+                                        <div class="my-2 text-center">
+
+                                            <h1>Vincent Vega</h1>
+
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <h2 class="text-uppercase text-center role">SEO Specialist</h2>
+
+                                        </div>
+                                        <div class="box">
+                                            <div>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                                                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                                                    <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="text-center">
+
+
+                                        <div class="img-hover-zoom img-hover-zoom--colorize">
+                                            <img src="img/sad.png" alt="Another Image zoom-on-hover effect">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div class="clearfix mb-3">
+
+
+                                        </div>
+
+
+                                        <div class="my-2 text-center">
+
+                                            <h1>O-Ren Ishii</h1>
+
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <h2 class="text-uppercase text-center role">Web Developer</h2>
+
+                                        </div>
+                                        <div class="box">
+                                            <div>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                                                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                                                    <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <div id='subscribe-css'>
+                <p class='subscribe-note'><span>Our Newsletter</span></p>
+                <h4><span class="text-light">keep in topuch</span> </h4>
+                <p class="text-light px-5 mx-5">Sign up to our newsletter subscription and be the first to know about
+                    Important news & Amazing offers & Discounts</p>
+                <div class='subscribe-wrapper'>
+                    <div class='subscribe-form'>
+                        <div class="fomcol">
+                            <form action="#" class='subscribe-form' method='post'>
+
+
+                                <input type="email" name="email" id="email" placeholder="example@example.com" />
+                                <input type="submit" value="submit">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
+
+
+        <h1 style="color: rgb(248, 104, 52); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        font-weight: bold; padding: 13% 0% 0% 1%; text-align: center;">
+            MAP</h1>
+        <P style="text-align: center;">WHAT WE DO</P>
+        <div class="divider text-center py-4">
+            <span class="outer-line"></span>
+            <span><i class="fas fa-cogs fa-2x px-4"></i></span>
+            <span class="outer-line"></span>
+        </div>
+
+        <div class="info-map">
+            <div class="google-map">
+                <div class="gmap_container">
+
+
+
+                    <div id="gmap_canvas" class="map" style="position: relative; overflow: hidden;">
+
+                        <object style="border:0; height: 450px; width: 100%;"
+                            data="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d228.26661756158398!2d90.38141318928766!3d23.73789628191835!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1632313690669!5m2!1sen!2sbd"
+                            width="600" height="450" allowfullscreen="" loading="lazy"></object>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <footer class="footer text-center">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Copyright Text Starts -->
+                <p>Oleaon- We make it happen</p>
+                <p>
+                    &copy; Copyright 2021 Oleaon and Designed with <span class="heart">&#10084;</span> by <a
+                        target="_blank" href="https://oleaon.com/">Team Oleaon </a>
+                </p>
+                <!-- Copyright Text Ends -->
+                <!-- Social Media Links Starts -->
+                <div class="social-icons">
+                    <ul class="social">
+                        <li>
+                            <a class="twitter" href="#" title="twitter"></a>
+                        </li>
+                        <li>
+                            <a class="facebook" href="https://www.facebook.com/oleaondotcom/" title="facebook"></a>
+                        </li>
+                        <li>
+                            <a class="google" href="#" title="google"></a>
+                        </li>
+                        <li>
+                            <a class="skype" href="#" title="skype"></a>
+                        </li>
+                        <li>
+                            <a class="instagram" href="#" title="instagram"></a>
+                        </li>
+                        <li>
+                            <a class="linkedin" href="https://www.linkedin.com/company/oleaon" title="linkedin"></a>
+                        </li>
+                        <li>
+                            <a class="youtube" href="#" title="youtube"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media Links Ends -->
+            </div>
+            <!-- Container Ends -->
+        </footer>
+
     </div>
+
+
+    </div>
+
 
 
 
     <script src="js/bootstrap.js"></script>
     <script src="js/myjs.js"></script>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+
+
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+  
+        </script>
 </body>
 
 </html>
