@@ -1322,9 +1322,38 @@ color: rgb(255, 81, 0);
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    background-color: #c78937;
+  }
+  
+  /* Fade in tabs */
+
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+      transition: all .2s ease-in-out;
+      transform: scale(0);
+      -webkit-transform: translateX(-50px);
+      -webkit-transform: translatey(40px);
+      z-index: -100;
+
+    }
+
+    to {opacity: 1;  transform: rotateY(-360deg);
+      transform: scale(1); 
+      -webkit-transform: translateX(0);
+      -webkit-transform: translatey(0px);
+      z-index: -100;
+
+    }
   }
 
 
+
+
+
+  
 
   @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
   @keyframes fade-in {

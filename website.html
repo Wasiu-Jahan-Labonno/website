@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="css/input.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/unpkg.css">
 
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     
+     <script src="js/mixitup.js"></script>
 
 
         <!--FONT AWESOME-->
@@ -113,7 +114,7 @@
             </ul>
         </nav>
 
-        <img id="home" class="backc" src="img/head.gif">
+        <img id="home" class="backc " src="img/head.gif">
 
         <div id="about" class="abt">
             <h1 style="color: rgb(255, 81, 0); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -140,17 +141,17 @@
                             <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
                           </div>
                         <div id="London" class="tabcontent" >
-                            <div data-aos="flip-left">
+                        
                             <h3 >London</h3>
                             <p data-aos="flip-left"> London is the capital city of England.</p>
                           </div>
-                        </div>
-                        <div style="background-color: coral;" data-aos="flip-left">
+                   
+                  
                           <div id="Paris" class="tabcontent">
                             <h3>Paris</h3>
                             <p > Paris is the capital of France.</p> 
                           </div>
-                        </div>
+                      
                           
                           <div id="Tokyo" class="tabcontent">
                             <h3>Tokyo</h3>
@@ -258,11 +259,11 @@
 
             <div class="mycol">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 block animatable bounceIn col-sm-12" style="padding-top:5%">
+                    <div class="col-lg-4 col-md-6 animatable  col-sm-12"  style="padding-top:5%">
                         <div class="Click-here" id="1"> <i class="fas fa-concierge-bell fa-3x"></i>
                             <h2>Creative solution</h2>
                         </div>
-                        <div class="custom-model-main big1">
+                        <div class="custom-model-main " id="big1">
                             <div class="custom-model-inner">
                                 <div class="close-btn">×</div>
                                 <div class="custom-model-wrap">
@@ -283,7 +284,7 @@
                         <div class="Click-here" id="2"> <i class="fas fa-leaf fa-3x"></i>
                             <h2>Creative solution</h2>
                         </div>
-                        <div class="custom-model-main big2">
+                        <div class="custom-model-main " id="big2">
                             <div class="custom-model-inner">
                                 <div class="close-btn">×</div>
                                 <div class="custom-model-wrap">
@@ -304,7 +305,7 @@
                         <div class="Click-here" id="3"> <i class="fas fa-drafting-compass fa-3x"></i>
                             <h2>Custom Design</h2>
                         </div>
-                        <div class="custom-model-main big3">
+                        <div class="custom-model-main " id="big3">
                             <div class="custom-model-inner">
                                 <div class="close-btn">×</div>
                                 <div class="custom-model-wrap">
@@ -326,7 +327,7 @@
                         <div class="Click-here" id="4"> <i class="fas fa-passport fa-3x"></i>
                             <h2>Creative solution</h2>
                         </div>
-                        <div class="custom-model-main big4">
+                        <div class="custom-model-main " id="big4">
                             <div class="custom-model-inner">
                                 <div class="close-btn">×</div>
                                 <div class="custom-model-wrap">
@@ -345,7 +346,7 @@
                         <div class="Click-here" id="5"> <i class="fas fa-passport fa-3x"></i>
                             <h2>Creative solution</h2>
                         </div>
-                        <div class="custom-model-main big5">
+                        <div class="custom-model-main " id="big5">
                             <div class="custom-model-inner">
                                 <div class="close-btn">×</div>
                                 <div class="custom-model-wrap">
@@ -364,7 +365,7 @@
                         <div class="Click-here" id="6"><i class="fas fa-id-card fa-3x"></i>
                             <h2>Creative solution</h2>
                         </div>
-                        <div class="custom-model-main big6">
+                        <div class="custom-model-main " id="big6">
                             <div class="custom-model-inner">
                                 <div class="close-btn">×</div>
                                 <div class="custom-model-wrap">
@@ -882,46 +883,46 @@
 
     <script>
         $("#1").on('click', function () {
-            $(".big1").addClass('model-open');
+            $("#big1").addClass('model-open');
         });
         $(".close-btn, .bg-overlay").click(function () {
-            $(".big1").removeClass('model-open');
+            $("#big1").removeClass('model-open');
         });
 
         $("#2").on('click', function () {
-            $(".big2").addClass('model-open');
+            $("#big2").addClass('model-open');
         });
         $(".close-btn, .bg-overlay").click(function () {
-            $(".big2").removeClass('model-open');
+            $("#big2").removeClass('model-open');
         });
 
 
         $("#3").on('click', function () {
-            $(".big3").addClass('model-open');
+            $("#big3").addClass('model-open');
         });
         $(".close-btn, .bg-overlay").click(function () {
-            $(".big3").removeClass('model-open');
+            $("#big3").removeClass('model-open');
         });
 
         $("#4").on('click', function () {
-            $(".big4").addClass('model-open');
+            $("#big4").addClass('model-open');
         });
         $(".close-btn, .bg-overlay").click(function () {
-            $(".big4").removeClass('model-open');
+            $("#big4").removeClass('model-open');
         });
 
         $("#5").on('click', function () {
-            $(".big5").addClass('model-open');
+            $("#big5").addClass('model-open');
         });
         $(".close-btn, .bg-overlay").click(function () {
-            $(".big5").removeClass('model-open');
+            $("#big5").removeClass('model-open');
         });
 
         $("#6").on('click', function () {
-            $(".big6").addClass('model-open');
+            $("#big6").addClass('model-open');
         });
         $(".close-btn, .bg-overlay").click(function () {
-            $(".big6").removeClass('model-open');
+            $("#big6").removeClass('model-open');
         });
 
 
@@ -995,10 +996,29 @@ filters.forEach(filter => {
 
 
 
-<script >AOS.init({
-    duration: 1200,
-  })</script>
+<script >
+    AOS.init();
+ 
+</script>
 
+
+
+
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
 </body>
 
 </html>
