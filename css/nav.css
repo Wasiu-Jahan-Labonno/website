@@ -29,15 +29,17 @@ nav {
     list-style: none;
     width: 88vw;
     padding: 0 0.7vw;
-    justify-content: end;
+    justify-content: center;
     align-items: flex-start;
     text-transform: uppercase;
+  
 
 }
 
 .nav-linkss li a {
     text-decoration: none;
     margin: 0 0.7vw;
+    padding:20% 0%;
 }
 
 .nav-linkss li a:hover {
@@ -135,9 +137,9 @@ nav {
     }
     .nav-linkss {
         position: fixed;
-        background: #131418;
+        background: #131418c7;
         color: #f2f5f7;
-        height: 100vh;
+      
         width: 100%;
         flex-direction: column;
         clip-path: circle(50px at 90% -20%);
@@ -152,6 +154,9 @@ nav {
     }
     .nav-linkss li {
         opacity: 0;
+        padding: 10% 2%;
+    
+
     }
     .nav-linkss li:nth-child(1) {
         transition: all 0.5s ease 0.2s;
@@ -179,6 +184,7 @@ nav {
     li.fadee {
         opacity: 1;
         color: #f2f5f7!important;
+      
     }
 }
 
@@ -201,3 +207,4 @@ nav {
 li .fadee a {
     color: #f2f5f7!important;
 }
+
