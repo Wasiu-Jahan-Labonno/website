@@ -1,3 +1,7 @@
+
+*{
+  scroll-behavior: smooth;
+}
 html {
     position: relative;
     top: 0;
@@ -13,16 +17,31 @@ body {
     font-size: 16px;
     font-family: sans, sans-serif;
     overflow-x: hidden;
-    background-color: black;
+    background-color: #000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
 }
 
 .fullbody {
 
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.767);
+ background-color: rgb(54, 54, 54);
 }
 
 
+
+.projectbg{
+
+  background: url('../img/767.png');
+       
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
 nav {
     position: fixed;
     top: 0;
@@ -237,12 +256,38 @@ hr {
   position: absolute;
   content: "";
   top: 5px;
-  background: url("../img/oleaon.png");
+
   width: 200px;
   height: 200px;
   left: -40px;
   background-repeat: no-repeat;
 }
+
+
+
+
+
+
+
+  .modalblur {
+    background-color: rgba(0, 0, 0, 0.95);
+    border-radius: 5px;
+    color: rgb(163, 161, 161);
+    font-family: sans-serif;
+    line-height: 1.5;
+    max-width: 100%;
+    padding: 1rem 2rem;
+
+    
+  }
+  
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .modalblur {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(180, 180, 180, 0.5);  
+      z-index: +10000000;
+    }
 
 .logo2::after {
   position: absolute;
@@ -867,6 +912,8 @@ form input.inpo1:focus {
     height: 100vh;
     width: 100%;
     position: fixed;
+    backdrop-filter: blur(6px);
+
     left: 0;
     top: 0;
     right: 0;
@@ -1561,8 +1608,9 @@ color: rgb(255, 81, 0);
   }
 
 
-  
-/*FULLDIV*/
 
 
- 
+
+
+
+}
