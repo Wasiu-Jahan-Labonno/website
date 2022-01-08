@@ -817,6 +817,10 @@ form input.inpo1:focus {
    
     z-index: 99;
   }
+
+  .md-none{
+      display: none;
+  }
   .bg-overlay {
    
     height: 100vh;
@@ -846,6 +850,22 @@ form input.inpo1:focus {
   .close-btn:hover{
       color: rgb(255, 94, 0);
   }
+  .close-btn1 {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 30px;
+    color: #fff;
+
+  }
+  .close-btn1:hover{
+      color: rgb(255, 94, 0);
+  }
+
+
+
   
   @media screen and (min-width:800px){
       .custom-model-main:before {
@@ -1006,7 +1026,7 @@ color: rgb(255, 81, 0);
     
   }
   .second .portfolio-bg{
-    background-image: url('https://www.youtube.com/embed/DTWWXVGwclk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+    background-image: url('/img/project3.jpg');
   }
   .third .portfolio-bg{
     background-image: url('https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?cs=srgb&dl=brainstorming-campaign-collaborate-6224.jpg&fm=jpg');
@@ -1195,7 +1215,7 @@ color: rgb(255, 81, 0);
     
   }
   .second .portfolio-bg{
-    background-image: url('https://www.youtube.com/embed/DTWWXVGwclk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+    background-image: url('/img/project3.jpg');
   }
 
   
