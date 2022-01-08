@@ -1,6 +1,7 @@
 
 *{
   scroll-behavior: smooth;
+  
 }
 html {
     position: relative;
@@ -27,7 +28,7 @@ body {
 .fullbody {
 
   width: 100%;
- background-color: rgb(0, 0, 0);
+background-image: url(../img/blkbg.jpg);
 }
 
 
@@ -97,9 +98,8 @@ ul li a:hover {
     background-size: cover;
     width: 100%;
     height: 60%;
-    -webkit-box-shadow: 2px 0px 26px 0px rgba(107, 107, 107, 1);
-    -moz-box-shadow: 2px 0px 26px 0px rgba(107, 107, 107, 1);
-    box-shadow: 2px 0px 26px 0px rgba(107, 107, 107, 1);
+   
+    box-shadow: 2px 0px 26px 0px rgb(0, 0, 0);
 }
 
 
@@ -243,7 +243,7 @@ hr {
     position: absolute;
     content: "";
     top: -35px;
-    background: url("../img/oleaon.png");
+ /* background: url("../img/oleaon.png");*/
     width: 500px;
     height: 500px;
     left: -40px;
@@ -254,7 +254,7 @@ hr {
     position: absolute;
     content: "";
     top: 13%;
-    background: url("../img/oleaon.png");
+   /* background: url("../img/oleaon.png");*/
     background-size: cover;
     width: 500px;
     height: 500px;
@@ -269,15 +269,32 @@ hr {
   position: absolute;
   content: "";
   top: 5px;
-
+ 
   width: 200px;
   height: 200px;
-  left: -40px;
+  left: 70px;
   background-repeat: no-repeat;
+  filter: blur(15px);
 }
 
 
-
+.logo2::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  background: url("../img/oleaon.png");
+  background-size: cover;
+  width: 450px;
+  height: 450px;
+  left: 80px;
+  background-repeat: no-repeat;
+  display: inline-flex;
+  padding: 0%;
+  z-index: 1;
+  opacity: .6;
+  filter: blur(8px);
+  
+}
 
 
 
@@ -302,22 +319,7 @@ hr {
       z-index: +10000000;
     }
 
-.logo2::after {
-  position: absolute;
-  content: "";
-  top: 120px;
-  background: url("../img/oleaon.png");
-  background-size: cover;
-  width: 200px;
-  height: 200px;
-  left: 200px;
-  background-repeat: no-repeat;
-  display: inline-flex;
-  padding: 0%;
-  z-index: 1;
-  opacity: .6;
-  
-}
+
 
 .phn {
     padding: 7% 1% 4% 1%;
@@ -678,8 +680,8 @@ form input.inpo1:focus {
 
 .footer {
 
-    background: rgb(234, 92, 4);
-    background: url("../img/60-lines.png"), linear-gradient(90deg, rgba(254, 87, 45, 1) 0%, rgba(254, 112, 32, 1) 35%, rgb(253, 142, 68) 100%);
+    background:  rgb(255, 81, 0);;
+
 }
 
 .footer .container {
@@ -788,13 +790,13 @@ form input.inpo1:focus {
     width: 100%;
     height: 500px;
     position: relative;
-    background-color: #fff;
+    color: rgb(255, 255, 255);
+    background-color: rgba(44, 43, 43, 0.603);
     border: 1px solid #999;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
-    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-    background-clip: padding-box;
+    box-shadow: 2px 7px 47px 4px rgba(124, 124, 124, 0.932);
+    background-clip: paddirgba(131, 129, 129, 0.5);
     outline: 0;
     text-align: left;
     padding: 20px;
@@ -1000,11 +1002,11 @@ color: rgb(255, 81, 0);
     transform: scale(1.2)
   }
   .first .portfolio-bg{
-    background-image: url('https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?cs=srgb&dl=accounts-applications-apps-267350.jpg&fm=jpg');
+    background-image: url('../img/prohect1.png');
     
   }
   .second .portfolio-bg{
-    background-image: url('https://images.pexels.com/photos/1053687/pexels-photo-1053687.jpeg?cs=srgb&dl=art-art-materials-artwork-1053687.jpg&fm=jpg');
+    background-image: url('https://www.youtube.com/embed/DTWWXVGwclk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
   }
   .third .portfolio-bg{
     background-image: url('https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?cs=srgb&dl=brainstorming-campaign-collaborate-6224.jpg&fm=jpg');
@@ -1189,12 +1191,14 @@ color: rgb(255, 81, 0);
     transform: scale(1.2)
   }
   .first .portfolio-bg{
-    background-image: url('https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?cs=srgb&dl=accounts-applications-apps-267350.jpg&fm=jpg');
+    background-image: url('../img/prohect1.png');
     
   }
   .second .portfolio-bg{
-    background-image: url('https://images.pexels.com/photos/1053687/pexels-photo-1053687.jpeg?cs=srgb&dl=art-art-materials-artwork-1053687.jpg&fm=jpg');
+    background-image: url('https://www.youtube.com/embed/DTWWXVGwclk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
   }
+
+  
   .third .portfolio-bg{
     background-image: url('https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?cs=srgb&dl=brainstorming-campaign-collaborate-6224.jpg&fm=jpg');
     
@@ -1551,3 +1555,9 @@ color: rgb(255, 81, 0);
 
 
 }
+
+
+.mar{
+  margin-bottom: 17%;
+}
+
