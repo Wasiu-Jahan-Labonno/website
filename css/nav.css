@@ -108,7 +108,7 @@ nav {
 .hamburger div {
     width: 30px;
     height: 3px;
-    background: #f2f5f7;
+    background: #ec920a;
     margin: 5px;
     transition: all 0.3s ease;
 }
