@@ -154,7 +154,7 @@ background-color: rgb(255, 81, 0);
     .section1 .form{
     min-width:40%;
     width:40%;
-    background-color:var(--dark);
+    background-color: #000000;
     padding:2rem;
     position:absolute;
     top:-30px;
@@ -180,7 +180,7 @@ background-color: rgb(255, 81, 0);
     height: 0;
     border-style: solid;
     border-width: 0 0 30px 30px;
-    border-color: transparent transparent var(--dark) transparent;
+    border-color: transparent transparent #000000 transparent;
     }
     
     .section1 .form:after {
@@ -192,7 +192,7 @@ background-color: rgb(255, 81, 0);
     height: 0;
     border-style: solid;
     border-width: 30px 0 0 30px;
-    border-color: transparent transparent transparent var(--dark);
+    border-color: transparent transparent transparent #000000;
     }
     
     .section1 .form input,.section1 .form select,.section1 .form textarea{
