@@ -13,36 +13,42 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="css/input.css">
-    <link rel="stylesheet" href="css/">
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/unpkg.css">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet"> 
         
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="js/mixitup.js"></script>
+
+        <link rel="stylesheet" href="css/aos.css">
+<!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="./js/jq.js"></script>
+        
+    
+   
 
 
         <!--FONT AWESOME-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-<!--GOOGLE FONTS-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet"> 
 
     <script src="js/bootstrap.js"></script>
-    <script src="js/jq.js"></script>
+    <!-- <script src="js/jq.js"></script> -->
 <script src="js/mixitup.js"></script>
 
+<script src="js/myjs.js"></script>
+
 <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+
     <script>
 
         filters.forEach(filter => {
@@ -75,6 +81,40 @@
   
 
     </script>
+
+    
+
+<script>
+    var $animation_elements = $('.animation-element');
+    var $window = $(window);
+  
+    function check_if_in_view() {
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+  
+      $.each($animation_elements, function() {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+  
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+          (element_top_position <= window_bottom_position)) {
+          $element.addClass('in-view');
+        } else {
+          $element.removeClass('in-view');
+        }
+      });
+    }
+  
+    $window.on('scroll resize', check_if_in_view);
+  $window.trigger('scroll');
+  </script>
+  
+
+
 </head>
 
 <body>
@@ -103,7 +143,7 @@
         <img id="home" class="backc " src="img/fb-cOVER.png">
 
       
-    
+    <div class="backcov2">
 
         <div id="Our Services">
             <div class="mar">
@@ -117,10 +157,12 @@
                         <span class="outer-line"></span>
                     </div>
         
-                    <div class="mycol">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6   col-sm-12"  style="padding-top:5%">
-                                <div class="Click-here" id="1"> <i class="fas fa-concierge-bell fa-3x"></i>
+                    <div class="mycol ">
+                        <div class="row " >
+                            <div class="col-lg-4 col-md-6   col-sm-12    " style="padding-top:5%">
+                              
+                                   
+                                <div class="Click-here" data-aos="fade-up" id="1"> <i class="fas fa-concierge-bell fa-3x"></i>
                                     <h2>Creative solution</h2>
                                 </div>
                                 <div class="custom-model-main " id="big1">
@@ -130,16 +172,18 @@
                                             <div class="logo2 m-5">
                                                 <h2>Creative Solutions</h2>
                                                 <hr class="hr1">
-                                                <p > We provide Software development and services for corporate office, garments, Industry, Bank, Institute and what, that you want to make your business easier.</p>
+                                                <h4> We provide Software development and services for corporate office, garments, Industry, Bank, Institute and what, that you want to make your business easier.</h4>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="bg-overlay"></div>
                                 </div>
-                            </div>
+                          
+                        </div>
+                  
         
                             <div class="col-lg-4 col-md-6  col-sm-12  " style="padding-top:5%">
-                                <div class="Click-here" id="2"> <i class="fas fa-leaf fa-3x"></i>
+                                <div class="Click-here" data-aos="fade-down" id="2"> <i class="fas fa-leaf fa-3x"></i>
                                     <h2>Featured services</h2>
                                 </div>
                                 <div class="custom-model-main " id="big2">
@@ -149,7 +193,7 @@
                                             <div class="logo2 m-5">
                                                 <h2>Featured services</h2>
                                                 <hr class="hr1">
-                                                <p>
+                                                <h4>
                                                     Web Development
                                                     
                                                     Games Development
@@ -162,7 +206,7 @@
                                                     
                                                     Payment Gateways
                                                     
-                                                    Maintanance services</p>
+                                                    Maintanance services</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -170,8 +214,10 @@
                                 </div>
                             </div>
         
-                            <div class="col-lg-4 col-md-6  col-sm-12  " style="padding-top:5%">
-                                <div class="Click-here" id="3"> <i class="fas fa-drafting-compass fa-3x"></i>
+                            <div class="col-lg-4 col-md-6  col-sm-12    " style="padding-top:5%">
+
+                               
+                                <div class="Click-here" data-aos="fade-up" id="3"> <i class="fas fa-drafting-compass fa-3x"></i>
                                     <h2>Custom Design</h2>
                                 </div>
                                 <div class="custom-model-main " id="big3">
@@ -181,18 +227,19 @@
                                             <div class="logo2 m-5">
                                                 <h2>Custom Design</h2>
                                                 <hr class="hr1">
-                                                <p>Custom Design
-                                                    We provide customized design for your bussiness purpose and also for personal use to grow you bussiness and make it easier.</p>
+                                                <h4>Custom Design
+                                                    We provide customized design for your bussiness purpose and also for personal use to grow you bussiness and make it easier.</h4>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="bg-overlay"></div>
                                 </div>
                             </div>
+                   
         
         
                             <div class="col-lg-4 col-md-6  col-sm-12  " style="padding-top:5%">
-                                <div class="Click-here" id="4"> <i class="fas fa-passport fa-3x"></i>
+                                <div class="Click-here " data-aos="fade-down" id="4"> <i class="fas fa-passport fa-3x"></i>
                                     <h2>Technical Support</h2>
                                 </div>
                                 <div class="custom-model-main " id="big4">
@@ -202,8 +249,8 @@
                                             <div class="logo2  m-5">
                                                 <h2>Technical Support</h2>
                                                 <hr class="hr1">
-                                                <p>
-                                                    We created our customer support team for our software because as veterans of the technology industry, we know your pain.</p>
+                                                <h4>
+                                                    We created our customer support team for our software because as veterans of the technology industry, we know your pain.</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -212,7 +259,7 @@
                             </div>
         
                             <div class="col-lg-4 col-md-6  col-sm-12  " style="padding-top:5%">
-                                <div class="Click-here" id="5"> <i class="fas fa-passport fa-3x"></i>
+                                <div class="Click-here " data-aos="fade-up" id="5"> <i class="fas fa-passport fa-3x"></i>
                                     <h2>Responsive Design</h2>
                                 </div>
                                 <div class="custom-model-main " id="big5">
@@ -222,8 +269,8 @@
                                             <div class="logo2  m-5">
                                                 <h2>Responsive Design</h2>
                                                 <hr class="hr1">
-                                                <p>
-                                                    The practice consists of a mix of flexible grids and layouts, images, and intelligent use of CSS media queries. As the user switches from their laptop to iPad, the website should automatically switch to accommodate for resolution, image size, and scripting abilities.</p>
+                                                <h4>
+                                                    The practice consists of a mix of flexible grids and layouts, images, and intelligent use of CSS media queries. As the user switches from their laptop to iPad, the website should automatically switch to accommodate for resolution, image size, and scripting abilities.</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -232,7 +279,7 @@
                             </div>
         
                             <div class="col-lg-4 col-md-6  col-sm-12  " style="padding-top:5%">
-                                <div class="Click-here" id="6"><i class="far fa-window-restore fa-3x"></i>
+                                <div class="Click-here " data-aos="fade-down" id="6"><i class="far fa-window-restore fa-3x"></i>
                                     <h2>Well Documented</h2>
                                 </div>
                                 <div class="custom-model-main " id="big6">
@@ -242,8 +289,29 @@
                                             <div class="logo2  m-5">
                                                 <h2>Well Documented</h2>
                                                 <hr class="hr1">
-                                                <p>
-                                                    We provide well-documented software that you may easily understand the functionalities of our software solutions.</p>
+                                                <h4>
+                                                    We provide well-documented software that you may easily understand the functionalities of our software solutions.</>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-overlay"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 col-md-6  col-sm-12  " style="padding-top:5%">
+                                <div class="Click-here "data-aos="fade-up" id="6"><i class="far fa-window-restore fa-3x"></i>
+                                    <h2>Well Documented</h2>
+                                </div>
+                                <div class="custom-model-main " id="big6">
+                                    <div class="custom-model-inner">
+                                        <div class="close-btn">×</div>
+                                        <div class="custom-model-wrap">
+                                            <div class="logo2  m-5">
+                                                <h2>Well Documented</h2>
+                                                <hr class="hr1">
+                                                <h4>
+                                                    We provide well-documented software that you may easily understand the functionalities of our software solutions.</>
                                             </div>
                                         </div>
                                     </div>
@@ -259,7 +327,7 @@
                     </div>
                     </div>
                 </div>
-
+            </div>
 
                 <div class="projectbg">
 
@@ -293,9 +361,9 @@
                                          </div>
                                          <div class="portfolio-grid">
                                            <div class="portfolio full-project Games " data-cat="Games full-project">
-                                             <div class="portfolio-wrapper first ">
+                                             <div class="portfolio-wrapper first  ">
                                                <div class="portfolio-bg "></div>
-                                               <div class="label">
+                                               <div class="label ">
                                                  <div class="label-text">
                                                    <h4>Vampire Dynasty</h4>
                                                    <span class="text-category">
@@ -442,7 +510,7 @@
 
 
 
-                    <div class="contatvdheading social-icons short-bio text-center " style="width:100%; height: 100%; ">
+                    <div class="contatvdheading social-icons short-bio text-center  " style="width:100%; height: 100%; ">
 
                         <h1  style="color: rgb(202, 29, 29); text-align: left;"><img style="width: 20%; height: 20%;"
                                 src="img/Appicon.png"> VAMPIRE DYNASTY</h1>
@@ -554,12 +622,12 @@
                         <span><i class="fas fa-cogs fa-2x px-4 text-light"></i></span>
                         <span class="outer-line"></span>
                     </div>
-                    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3" style="padding-top:5%;">
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <div class="text-center">
+                    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 " style="padding-top:5%;">
+                        <div class="col ">
+                            <div class="card h-100 shadow-sm  ">
+                                <div class="text-center ">
                                     <div class="img-hover-zoom img-hover-zoom--colorize">
-                                        <img src="https://source.unsplash.com/rDEOVtE7vOs/600x600"
+                                        <img src="img/omar.jpg"
                                             alt="Another Image zoom-on-hover effect">
                                     </div>
                                 </div>
@@ -567,7 +635,7 @@
                                     <div class="clearfix mb-3">
                                     </div>
                                     <div class="my-2 text-center">
-                                        <h3 class="text-light">Mia Wallace</h3>
+                                        <h3 class="text-light">MD Omar Ali</h3>
                                     </div>
                                     <div class="mb-3">
                                         <h2 class="text-uppercase text-center role">Senior Frontend Developer</h2>
@@ -584,11 +652,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col ">
                             <div class="card h-100 shadow-sm">
                                 <div class="text-center">
-                                    <div class="img-hover-zoom img-hover-zoom--colorize">
-                                        <img src="https://source.unsplash.com/XHVpWcr5grQ/600x600"
+                                    <div class="img-hover-zoom img-hover-zoom--colorize ">
+                                        <img src="img/ammu.jpg"
                                             alt="Another Image zoom-on-hover effect">
                                     </div>
                                 </div>
@@ -596,7 +664,7 @@
                                     <div class="clearfix mb-3">
                                     </div>
                                     <div class="my-2 text-center">
-                                        <h3 class="text-light">Vincent Vega</h3>
+                                        <h3 class="text-light">Amena Khatun</h3>
                                     </div>
                                     <div class="mb-3">
 
@@ -619,7 +687,7 @@
                             <div class="card h-100 shadow-sm">
                                 <div class="text-center">
                                     <div class="img-hover-zoom img-hover-zoom--colorize">
-                                        <img src="https://source.unsplash.com/n4KewLKFOZw/600x600"
+                                        <img src="img/labonno .jfif"
                                             alt="Another Image zoom-on-hover effect">
                                     </div>
                                 </div>
@@ -628,7 +696,7 @@
                                     </div>
                                     <div class="my-2 text-center">
 
-                                        <h3 class="text-light" class="text-light">Mr. Wolf</h3>
+                                        <h3 class="text-light" class="text-light">Wasiu Jahan Labonno</h3>
                                     </div>
                                     <div class="mb-3">
                                          <h2 class="text-uppercase text-center role">SEO Specialist</h2>
@@ -652,7 +720,7 @@
                             <div class="card h-100 shadow-sm">
                                 <div class="text-center">
                                     <div class="img-hover-zoom img-hover-zoom--colorize">
-                                        <img src="https://source.unsplash.com/XHVpWcr5grQ/600x600"
+                                        <img src="img/sakib mama.jpg"
                                             alt="Another Image zoom-on-hover effect">
                                     </div>
                                 </div>
@@ -660,7 +728,7 @@
                                     <div class="clearfix mb-3">
                                     </div>
                                     <div class="my-2 text-center">
-                                        <h3 class="text-light">Vincent Vega</h3>
+                                        <h3 class="text-light">Sakib Ahmed Niloy</h3>
                                     </div>
                                     <div class="mb-3">
                                         <h2 class="text-uppercase text-center role">SEO Specialist</h2>
@@ -681,14 +749,14 @@
                             <div class="card h-100 shadow-sm">
                                 <div class="text-center">
                                     <div class="img-hover-zoom img-hover-zoom--colorize">
-                                        <img src="img/sad.png" alt="Another Image zoom-on-hover effect">
+                                        <img src="img/shariyavai.jpg" alt="Another Image zoom-on-hover effect">
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="clearfix mb-3">
                                     </div>
                                     <div class="my-2 text-center">
-                                        <h3 class="text-light">O-Ren Ishii</h3>
+                                        <h3 class="text-light">Hassan Shahriar</h3>
                                     </div>
                                     <div class="mb-3">
 
@@ -706,6 +774,128 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <div class="text-center">
+                                    <div class="img-hover-zoom img-hover-zoom--colorize">
+                                        <img src="img/habiburvai.jpg"
+                                            alt="Another Image zoom-on-hover effect">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="clearfix mb-3">
+                                    </div>
+                                    <div class="my-2 text-center">
+                                        <h3 class="text-light">Habibur Rahman</h3>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h2 class="text-uppercase text-center role">SEO Specialist</h2>
+                                    </div>
+                                    <div class="box">
+                                        <div>
+                                            <ul class="list-inline text-center">
+                                                <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                                                <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                                                <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <div class="text-center">
+                                    <div class="img-hover-zoom img-hover-zoom--colorize">
+                                        <img src="img/bindubhai.jpg"
+                                            alt="Another Image zoom-on-hover effect">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="clearfix mb-3">
+                                    </div>
+                                    <div class="my-2 text-center">
+                                        <h3 class="text-light">Abdullah Al Baki</h3>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h2 class="text-uppercase text-center role">SEO Specialist</h2>
+                                    </div>
+                                    <div class="box">
+                                        <div>
+                                            <ul class="list-inline text-center">
+                                                <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                                                <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                                                <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <div class="text-center">
+                                    <div class="img-hover-zoom img-hover-zoom--colorize">
+                                        <img src="img/safrina.jpg"
+                                            alt="Another Image zoom-on-hover effect">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="clearfix mb-3">
+                                    </div>
+                                    <div class="my-2 text-center">
+                                        <h3 class="text-light">Shafrina Khatun</h3>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h2 class="text-uppercase text-center role">SEO Specialist</h2>
+                                    </div>
+                                    <div class="box">
+                                        <div>
+                                            <ul class="list-inline text-center">
+                                                <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                                                <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                                                <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col " >
+                            <div class="card h-100 shadow-sm " >
+                                <div class="text-center">
+                                    <div class="img-hover-zoom img-hover-zoom--colorize">
+                                        <img src="img/raj.jpg"
+                                            alt="Another Image zoom-on-hover effect">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="clearfix mb-3">
+                                    </div>
+                                    <div class="my-2 text-center">
+                                        <h3 class="text-light">James Raj (গুরুভক্ত)</h3>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h2 class="text-uppercase text-center role">SEO Specialist</h2>
+                                    </div>
+                                    <div class="box">
+                                        <div>
+                                            <ul class="list-inline text-center">
+                                                <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                                                <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                                                <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -714,7 +904,7 @@
 
     </div>
         <div id="contact">       
-            <div class="social-icons" style="margin-top:15%;">
+            <div class="social-icons" style="margin-top:5%;">
  
             <h1 style="color: rgb(255, 81, 0); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-weight: bold; padding: 5% 0% 0% 1%;  text-align: center; text-shadow: 2px 2px 8px #000000;">
@@ -815,7 +1005,7 @@
  
 
     <h1 style="color: rgb(255, 81, 0); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold; padding: 15% 0% 0% 1%;   text-shadow: 2px 2px 8px #000000;" class="text-center">
+    font-weight: bold; padding: 5% 0% 0% 1%;   text-shadow: 2px 2px 8px #000000;" class="text-center">
         MAP</h1>
     <P class="text-light ptsdo">WHAT WE DO</P>
     <div class="divider text-center py-4">
@@ -839,8 +1029,8 @@
 
         <footer>
             <div class="content">
-                <p class="m-0 p-0">Oleaon- We make it happen</p>
-            <p>
+                <p class="m-0 p-1">Oleaon- We make it happen</p>
+            <p class="p-1 m-0">
                 &copy; Copyright 2021 Oleaon and Designed with <span class="heart">&#10084;</span> by <a target="_blank"
                     href="https://oleaon.com/">Team Oleaon </a>
             </p>
@@ -859,8 +1049,6 @@
     </div>
 </div>
 
-    <script src="js/bootstrap.js"></script>
-    <script src="js/myjs.js"></script>
 
 
 
@@ -1077,7 +1265,8 @@ filters.forEach(filter => {
 
 
 
-<script>document.querySelector('#b1').onmousemove = function (e) {
+<script>
+document.querySelector('#but1').onmousemove = function (e) {
 
     var x = e.pageX - e.target.offsetLeft;
     var y = e.pageY - e.target.offsetTop;
@@ -1085,7 +1274,6 @@ filters.forEach(filter => {
     e.target.style.setProperty('--x', x + 'px');
     e.target.style.setProperty('--y', y + 'px');
   };
-  
   document.querySelector('#b2').onmousemove = function (e) {
 
 var x = e.pageX - e.target.offsetLeft;
@@ -1101,25 +1289,58 @@ var y = e.pageY - e.target.offsetTop;
 
 e.target.style.setProperty('--x', x + 'px');
 e.target.style.setProperty('--y', y + 'px');
-};</script>
+};
+  </script>
 
 <script>
-var btn = $('#button');
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
+   
+  if ($(this).scrollTop() > 300) {
+    $('#back-top').fadeIn();
   } else {
-    btn.removeClass('show');
+    $('#back-top').fadeOut();
   }
 });
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
+
 </script>
 
-</body>
+<script>
+    var $animation_elements = $('.animation-element');
+    var $window = $(window);
+  
+    function check_if_in_view() {
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+  
+      $.each($animation_elements, function() {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+          console.log(' element bottom',element_bottom_position )
+          console.log('window top',window_top_position )
+          console.log('element top',element_top_position)
+          console.log('window bottom',window_bottom_position)
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+          (element_top_position <= window_bottom_position)) {
+          $element.addClass('in-view');
+        } else {
+          $element.removeClass('in-view');
+        }
+      });
+    }
+  
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
+  </script>
+<script>
+    AOS.init({
+  duration: 1200,
+})
+</script>
 
 </html>

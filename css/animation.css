@@ -1,0 +1,41 @@
+
+
+.dummy-text {
+  padding: 0 50px;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 20px;
+  font-family: roboto;
+}
+
+.animation {
+  width: 300px;
+  height: 150px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#009688), to(#CDDC39));
+  background-image: linear-gradient(to bottom right, #009688, #CDDC39);
+  
+  -webkit-box-shadow: 0px 5px 12px 5px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0px 5px 12px 5px rgba(0,0,0,0.2);
+  -o-box-shadow: 0px 5px 12px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 12px 5px rgba(0,0,0,0.2);
+}
+
+  .animation span {
+      line-height: 6;
+      font-size: 23px;
+  }
+
+/*All Animations*/
+.zoom-in {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
