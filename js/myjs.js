@@ -121,3 +121,20 @@ btn.addEventListener("click" , (event)=>{
 
 
 		
+	
+		function projectnam(evt, promane) {
+		  var i, tabcontent, detapro;
+		  tabcontent = document.getElementsByClassName("suctabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  detapro = document.getElementsByClassName("detapro");
+		  for (i = 0; i < detapro.length; i++) {
+			detapro[i].className = detapro[i].className.replace(" active", "");
+		  }
+		  document.getElementById(promane).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+		
+		// Get the element with id="defaultOpen" and click on it
+		
