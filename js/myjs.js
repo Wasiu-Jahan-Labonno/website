@@ -2,7 +2,8 @@
 
 window.onscroll = () => {
     const nav = document.querySelector('#navbar');
-    if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+    if(this.scrollY <= 10){ nav.className =''; }
+	else {nav.className = 'scroll'};
   };
 
   // number count for stats, using jQuery animate
@@ -33,35 +34,9 @@ $('.counting').each(function() {
 });
 
 
-const btn = document.querySelector(".form2-btn");
-let emailValue = document.getElementById("userMail");
-let passwordValue = document.getElementById("passw");
-let errorDialogue = document.createElement("p");
 
 
-btn.addEventListener("click" , (event)=>{
-    event.preventDefault();
 
-    if(emailValue.value.trim().length === 0 || passwordValue.value.trim().length === 0 ){
-        errorDialogue.innerText = "please fill the form2";
-        document.querySelector(".container2").append(errorDialogue);
-        return;
-    }else if(passwordValue.value.trim().length < 8 ){
-        errorDialogue.innerText = "please enter password minimum 8 digit or character";
-        document.querySelector(".container2").append(errorDialogue);
-        return;
-    }else if(!emailValue.value.includes("@")){
-        errorDialogue.innerText = "please enter the valid E-mail";
-        document.querySelector(".containe2r").append(errorDialogue);
-        return;
-    }else{
-        errorDialogue.innerText = "SUCCESSFULLY FORM SUBMITTED !";
-        document.querySelector(".container2").append(errorDialogue);
-    }
-
-    console.log(emailValue.value);
-    console.log(passwordValue.value);
-})
 
 
 
@@ -71,6 +46,9 @@ btn.addEventListener("click" , (event)=>{
 		jQuery(".magnific-popup-gallery").parent().each(function() {
 			magnific_popup_init(jQuery(this))
 		});
+		$(document).ready(function(){
+
+		
 			
 		jQuery(".mfp-youtube").magnificPopup({
 			type: "iframe",
@@ -100,6 +78,7 @@ btn.addEventListener("click" , (event)=>{
 				}
 			}
 		});
+	})
 		function magnific_popup_init(item) {
 			item.magnificPopup({
 				delegate: "a[data-gal^='magnific-pop-up']",
