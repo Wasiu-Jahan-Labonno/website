@@ -56,7 +56,7 @@
 
     
 
-<script>
+<!-- <script>
     var $animation_elements = $('.animation-element');
     var $window = $(window);
   
@@ -83,7 +83,7 @@
   
     $window.on('scroll resize', check_if_in_view);
 /*   $window.trigger('scroll'); */
-  </script>
+  </script> -->
   
 
 
@@ -107,7 +107,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#Our Services">Our Services</a></li>
                 <li><a href="#project"> project</a></li>
-                <li><a href="#about"> About</a></li>
+                <li><a href="#about1"> About</a></li>
                 <li><a href="#OurTeam"> Our Team</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul> 
@@ -325,9 +325,9 @@
                 <div class="service ">
                     <div class="text-center">
                        
-                       <h1 id="project" class="head" style="color: rgb(255, 81, 0); padding: 5% 0% 0% 1%;   text-shadow: 2px 2px 8px #000000;">
+                       <h1 id="project" class="head" style="color: rgb(255, 81, 0); padding: 3% 0% 0% 1%;   text-shadow: 2px 2px 8px #000000;">
                         PROJECT</h1>
-                          <p class="text-white subtit">WHAT WE DO</P>
+                          <p class="text-white subtit p-0 m-0">WHAT WE DO</P>
                     <div class="divider text-center">
                         <span class="outer-line"></span>
                         <span><i class="fas fa-cogs fa-2x px-4 text-light"></i></span>
@@ -472,7 +472,7 @@
                 <p class="text-white subtit">WHAT WE DO</P>
             <div class="divider text-center">
                 <span class="outer-line"></span>
-                <span><i class="fas fa-stars fa-2x p-4 text-light"></i></span>
+                <span><i class="fas fa-stars fa-2x p-2 text-light"></i></span>
                 <span class="outer-line"></span>
             </div>
 
@@ -1159,17 +1159,12 @@
         <span><i class="fas fa-cogs fa-2x px-4 text-light"></i></span>
         <span class="outer-line"></span>
     </div>
-    <div class="info-map">
-        <div class="google-map">
-            <div class="gmap_container">
-                <div id="gmap_canvas" class="map" style="position: relative; overflow: hidden;">
-                    <object style="border:0; height: 450px; width: 100%;"
-                        data="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d228.26661756158398!2d90.38141318928766!3d23.73789628191835!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1632313690669!5m2!1sen!2sbd"
-                        width="600" height="450" allowfullscreen="" loading="lazy"></object>
-                </div>
-            </div>
-        </div>
-    </div>
+ <!--Google map-->
+<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.2675513182776!2d90.37896451445559!3d23.73783669517426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c9c6829b67%3A0x58fec4edbf6db8bd!2z4Kas4KeH4KayIOCmn-CmvuCmk-Cnn-CmvuCmsCAo4Kas4KeH4KaV4KeN4Ka44Ka_4Kau4KaV4KeLKQ!5e0!3m2!1sbn!2sbd!4v1642586540052!5m2!1sbn!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  
+  <!--Google Maps-->
   
         <!-- Container Starts -->
 
@@ -1195,10 +1190,7 @@
     </div>
 </div>
 
-
-
-
-    <script>
+  <script>
         	// BACK TO TOP
 		$("#back-top a").on("click", function() {
 			$("body,html").stop(false, false).animate({
@@ -1207,19 +1199,13 @@
 			}, 100);
 			return false;
 		})
-
-      
-
         $(window).on("scroll", function() {
 		
 	
 		// BACK TO TOP
 		if ($(this).scrollTop() > 100) {
 			$("#back-top").fadeIn(5);
-            
-
-             
-            
+      
 		} else {
 			$("#back-top").fadeOut();
 		}
@@ -1328,33 +1314,33 @@
 
 
         
-const filters = document.querySelectorAll('.filter');
+// const filters = document.querySelectorAll('.filter');
 
-filters.forEach(filter => { 
+// filters.forEach(filter => { 
 
-  filter.addEventListener('click', function() {
+//   filter.addEventListener('click', function() {
 
-    let selectedFilter = filter.getAttribute('data-filter');
-    let itemsToHide = document.querySelectorAll(`.projects .project:not([data-filter='${selectedFilter}'])`);
-    let itemsToShow = document.querySelectorAll(`.projects [data-filter='${selectedFilter}']`);
+//     let selectedFilter = filter.getAttribute('data-filter');
+//     let itemsToHide = document.querySelectorAll(`.projects .project:not([data-filter='${selectedFilter}'])`);
+//     let itemsToShow = document.querySelectorAll(`.projects [data-filter='${selectedFilter}']`);
 
-    if (selectedFilter == 'all') {
-      itemsToHide = [];
-      itemsToShow = document.querySelectorAll('.projects [data-filter]');
-    }
+//     if (selectedFilter == 'all') {
+//       itemsToHide = [];
+//       itemsToShow = document.querySelectorAll('.projects [data-filter]');
+//     }
 
-    itemsToHide.forEach(el => {
-      el.classList.add('hide');
-      el.classList.remove('show');
-    });
+//     itemsToHide.forEach(el => {
+//       el.classList.add('hide');
+//       el.classList.remove('show');
+//     });
 
-    itemsToShow.forEach(el => {
-      el.classList.remove('hide');
-      el.classList.add('show'); 
-    });
+//     itemsToShow.forEach(el => {
+//       el.classList.remove('hide');
+//       el.classList.add('show'); 
+//     });
 
-  });
-});
+//   });
+// });
     </script>
     <script>
               $(function () {
@@ -1443,47 +1429,35 @@ e.target.style.setProperty('--y', y + 'px');
 };
   </script>
 
-<script>
 
-$(window).scroll(function() {
-   
-  if ($(this).scrollTop() > 300) {
-    $('#back-top').fadeIn();
-  } else {
-    $('#back-top').fadeOut();
-  }
-});
-
-
-</script>
 
 <script>
-    var $animation_elements = $('.animation-element');
-    var $window = $(window);
+    // var $animation_elements = $('.animation-element');
+    // var $window = $(window);
   
-    function check_if_in_view() {
-      var window_height = $window.height();
-      var window_top_position = $window.scrollTop();
-      var window_bottom_position = (window_top_position + window_height);
+    // function check_if_in_view() {
+    //   var window_height = $window.height();
+    //   var window_top_position = $window.scrollTop();
+    //   var window_bottom_position = (window_top_position + window_height);
   
-      $.each($animation_elements, function() {
-        var $element = $(this);
-        var element_height = $element.outerHeight();
-        var element_top_position = $element.offset().top;
-        var element_bottom_position = (element_top_position + element_height);
-          console.log(' element bottom',element_bottom_position )
-          console.log('window top',window_top_position )
-          console.log('element top',element_top_position)
-          console.log('window bottom',window_bottom_position)
-        //check to see if this current container is within viewport
-        if ((element_bottom_position >= window_top_position) &&
-          (element_top_position <= window_bottom_position)) {
-          $element.addClass('in-view');
-        } else {
-          $element.removeClass('in-view');
-        }
-      });
-    }
+    //   $.each($animation_elements, function() {
+    //     var $element = $(this);
+    //     var element_height = $element.outerHeight();
+    //     var element_top_position = $element.offset().top;
+    //     var element_bottom_position = (element_top_position + element_height);
+    //       console.log(' element bottom',element_bottom_position )
+    //       console.log('window top',window_top_position )
+    //       console.log('element top',element_top_position)
+    //       console.log('window bottom',window_bottom_position)
+    //     //check to see if this current container is within viewport
+    //     if ((element_bottom_position >= window_top_position) &&
+    //       (element_top_position <= window_bottom_position)) {
+    //       $element.addClass('in-view');
+    //     } else {
+    //       $element.removeClass('in-view');
+    //     }
+    //   });
+    // }
   
     $window.on('scroll resize', check_if_in_view);
     $window.trigger('scroll');

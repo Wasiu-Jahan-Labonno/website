@@ -33,15 +33,6 @@ $('.counting').each(function() {
 
 });
 
-
-
-
-
-
-
-
-
-
 		// INITIALIZING MAGNIFIC POPUP
 		jQuery(".magnific-popup-gallery").parent().each(function() {
 			magnific_popup_init(jQuery(this))
@@ -79,25 +70,7 @@ $('.counting').each(function() {
 			}
 		});
 	})
-		function magnific_popup_init(item) {
-			item.magnificPopup({
-				delegate: "a[data-gal^='magnific-pop-up']",
-				type: "image",
-				removalDelay: 500,
-				mainClass: "mfp-zoom-in",
-				fixedContentPos: false,
-				callbacks: {
-					beforeOpen: function() {
-						// just a hack that adds mfp-anim class to markup 
-						this.st.image.markup = this.st.image.markup.replace("mfp-figure", "mfp-figure mfp-with-anim");
-					}
-				},
-				gallery: {
-					enabled: true
-				}
-			});
-		}
-
+	
 
 		
 	
