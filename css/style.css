@@ -32,7 +32,7 @@ background-image: url("../img/bacjcov4.jpg");
 }
 
 .backcov2{
-  background-image: url("../img/backvov2.gif");
+  background-image: url("../img/backvov2.jpg");
 }
 @font-face {
   font-family: dsct;
@@ -1137,7 +1137,7 @@ color: rgb(255, 81, 0);
     
   }
   .fourth .portfolio-bg{
-    background-image: url('../img/Screenshot\ \(5\).png');
+    background-image: url('../img/Screenshot\ \(5\).jpg');
     
   }
   .portfolio .label {
@@ -1338,7 +1338,7 @@ color: rgb(255, 81, 0);
     
   }
   .fourth .portfolio-bg{
-    background-image: url('../img/Screenshot\ \(5\).png');
+    background-image: url('../img/Screenshot\ \(5\).jpg');
     
   }
   
