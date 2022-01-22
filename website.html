@@ -67,26 +67,26 @@
                      </svg>
                      </button>
                  <svg id='svg2' class='up2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <circle id='circle1' class='circle1 steap' cx="34px" cy="49%" r="20"  />
-                    <circle id='circle2' class='circle2 steap' cx="34px" cy="49%" r="100"  />
-                    <circle id='circle3' class='circle3 steap' cx="34px" cy="49%" r="180"  />
-                    <circle id='circle4' class='circle4 steap' cx="34px" cy="49%" r="260"  />
-                    <circle id='circle5' class='circle5 steap' cx="34px" cy="49%" r="340"  />
-                    <circle id='circle6' class='circle6 steap' cx="34px" cy="49%" r="420"  />
-                    <circle id='circle7' class='circle7 steap' cx="34px" cy="49%" r="500"  />
-                    <circle id='circle8' class='circle8 steap' cx="34px" cy="49%" r="580"  />
-                    <circle id='circle9' class='circle9 steap' cx="34px" cy="49%" r="660"  />
+                    <circle id='circle1' class='circle1 steap' cx="13%" cy="49%" r="20"  />
+                    <circle id='circle2' class='circle2 steap' cx="13%" cy="49%" r="100"  />
+                    <circle id='circle3' class='circle3 steap' cx="13%" cy="49%" r="180"  />
+                    <circle id='circle4' class='circle4 steap' cx="13%" cy="49%" r="260"  />
+                    <circle id='circle5' class='circle5 steap' cx="13%" cy="49%" r="340"  />
+                    <circle id='circle6' class='circle6 steap' cx="13%" cy="49%" r="420"  />
+                    <circle id='circle7' class='circle7 steap' cx="13%" cy="49%" r="500"  />
+                    <circle id='circle8' class='circle8 steap' cx="13%" cy="49%" r="580"  />
+                    <circle id='circle9' class='circle9 steap' cx="13%" cy="49%" r="660"  />
                   </svg>
                  <svg id='svg1' class='up2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <circle id='circle10' class='circle10 steap' cx="648px" cy="49%" r="20"  />
-                    <circle id='circle11' class='circle11 steap' cx="648px" cy="49%" r="100"  />
-                    <circle id='circle12' class='circle12 steap' cx="648px" cy="49%" r="180"  />
-                    <circle id='circle13' class='circle13 steap' cx="648px" cy="49%" r="260"  />
-                    <circle id='circle14' class='circle14 steap' cx="648px" cy="49%" r="340"  />
-                    <circle id='circle15' class='circle15 steap' cx="648px" cy="49%" r="420"  />
-                    <circle id='circle16' class='circle16 steap' cx="648px" cy="49%" r="500"  />
-                    <circle id='circle17' class='circle17 steap' cx="648px" cy="49%" r="580"  />
-                    <circle id='circle18' class='circle18 steap' cx="648px" cy="49%" r="660"  />
+                    <circle id='circle10' class='circle10 steap' cx="13%" cy="49%" r="20"  />
+                    <circle id='circle11' class='circle11 steap' cx="13%" cy="49%" r="100"  />
+                    <circle id='circle12' class='circle12 steap' cx="13%" cy="49%" r="180"  />
+                    <circle id='circle13' class='circle13 steap' cx="13%" cy="49%" r="260"  />
+                    <circle id='circle14' class='circle14 steap' cx="13%" cy="49%" r="340"  />
+                    <circle id='circle15' class='circle15 steap' cx="13%" cy="49%" r="420"  />
+                    <circle id='circle16' class='circle16 steap' cx="13%" cy="49%" r="500"  />
+                    <circle id='circle17' class='circle17 steap' cx="13%" cy="49%" r="580"  />
+                    <circle id='circle18' class='circle18 steap' cx="13%" cy="49%" r="660"  />
                   </svg>
                  <div id='slide1' class='slide1 up1'>MOUNTAIN</div>
                  <div id='slide2' class='slide2'>BEACH</div>
@@ -1150,6 +1150,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/mixitup.js"></script>
     <script src="js/myjs.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
 
 
   <script>
@@ -1190,7 +1191,7 @@
             x[myIndex - 1].style.display = "block";
             setTimeout(carousel, 2000); // Change image every 2 seconds
 
-            console.log("this is my index",myIndex)
+          
         }
     </script>
         <script>
@@ -1210,7 +1211,7 @@
                 x[myIndex2 - 1].style.display = "block";
                 setTimeout(carousel2, 2000); // Change image every 2 seconds
     
-                console.log("this is my index2",myIndex2)
+              
             }
         </script>
             <script>
@@ -1230,7 +1231,7 @@
                     x[myIndex3 - 1].style.display = "block";
                     setTimeout(carousel3, 2000); // Change image every 2 seconds
         
-                    console.log("this is my index3",myIndex3)
+               
                 }
             </script>
 <script>
@@ -1260,6 +1261,7 @@
         });
         $(".close-btn, .bg-overlay").click(function () {
             $(".model-open").removeClass('model-open');
+            console.log("hi hi hi bye")
            // $('#big55').get(0).stopVideo();
           // $('iframe').attr('src',$('iframe').attr('src'))
 
