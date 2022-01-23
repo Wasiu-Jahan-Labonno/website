@@ -5,7 +5,7 @@ nav {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     position: fixed;
-    z-index: +10000;
+    z-index: +10000!important;
 }
 
 
@@ -28,7 +28,7 @@ nav {
     display: flex;
     list-style: none;
     width: 88vw;
-    padding: 0 0.7vw;
+
     justify-content: center;
     align-items: flex-start;
     text-transform: uppercase;

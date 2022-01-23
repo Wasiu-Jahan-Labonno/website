@@ -112,7 +112,8 @@ line-height: 1.5rem;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 5px 5px 31px 5px #000;
+  /* box-shadow: 5px 5px 31px 5px #000; */
+  box-shadow: 0px 1px 18px 4px #000;
   
 
 }
@@ -120,7 +121,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    height: 3.4em;
+    height:4em;
     width: 100%;
     background-color: #f7b34d00;
     box-sizing: border-box;
@@ -134,7 +135,7 @@ nav {
 nav.scroll {
     background-color: #3e3d3da2;
     color: rgb(0, 0, 0);  
-    height: 3.8em;
+    height: 4em;
 
   }
 
@@ -145,16 +146,8 @@ nav.scroll ul li a {
 
 }
 
-ul {
-    margin: 0%;
-    padding: 1% 0%;
-}
 
-li {
-    display: inline-block;
-    padding: 0.5% 1%;
-    list-style-type: none;
-}
+
 
 nav.scroll ul li:hover {
     color: #c78937;
@@ -174,7 +167,7 @@ ul li a:hover {
 .backc {
     background-size: cover;
     width: 100%;
-    height: 60%;
+    height: 100%;
    
     box-shadow: 2px 0px 26px 0px rgb(0, 0, 0);
 }
@@ -568,15 +561,14 @@ section#counter-stats {
     justify-content: center;
     z-index: -1030;
 }
-
-.fab {
+.sociali.fab {
     font-size: 1.5rem;
     color: #F86834;
     transition: transform .5s;
     z-index: -1030;
 }
 
-.fab:hover {
+.sociali.fab:hover {
     color: rgb(255, 249, 249);  
     transform: scale(1.1);
 }
@@ -802,12 +794,17 @@ filter: blur(8px);
 
 /*POPUP*/
 
-
+.textcol{
+  color: white;
+}
+.textcol:hover{
+  color:black ;
+}
 .Click-here {
     cursor: pointer;
     background-color: rgba(65, 63, 63, 0.74);
      border-top:1px solid rgb(252, 148, 110) ; border-bottom:1px solid rgb(252, 148, 110);
-    color: rgb(255, 255, 255);
+    color: rgb(236, 86, 16);
     width: 300px;
     text-align: center;
     font-size:16px;
@@ -828,8 +825,7 @@ filter: blur(8px);
    background-color: rgb(255, 81, 0);
     transform: scale(.9);
     transition: transform .9s;
-   
-    color: black;
+    color: rgb(0, 0, 0);
 
   }
   .custom-model-main {
@@ -2362,7 +2358,7 @@ background-color: rgba(77, 77, 77, 0.767); ;
 	 height: 40px;
 	 border: none;
 	 border-radius: 50%;
-	 background: rgba(255, 255, 255, 0.815);
+	 background-color: rgba(255, 175, 2, 0.479);
 	 cursor: pointer;
 	 -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
 	 -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
@@ -2395,24 +2391,29 @@ background-color: rgba(77, 77, 77, 0.767); ;
 	 transform: translate(-9px, -8px);
 }
  .right {
-  margin-left: 23.8%;
+  margin-left: 23.5%;
 	 margin-top: 240px; 
-	 border: 1px solid #849494;
+	 border: 1px solid #c22e09;
 	 background-color: transparent;
 	 transition: 0.5s;
+   color:rgb(255, 81, 0) ;
 }
  .right:hover {
-	 background-color: #fff;
+  background-color: rgb(255, 81, 0);
+  color: white;
 }
  .left {
 	 margin-left: 0.5%;
 	 margin-top: 240px;
-	 border: 1px solid #849494;
+   border: 1px solid #c22e09;
 	 background-color: transparent;
 	 transition: 0.5s;
+   color:rgb(255, 81, 0) ;
+
 }
  .left:hover {
-	 background-color: #fff;
+  background-color: rgb(255, 81, 0);
+  color: white;
 }
  .circle1 {
 	 transition-delay: 0.05s;
@@ -2469,7 +2470,7 @@ background-color: rgba(77, 77, 77, 0.767); ;
 	 transition-delay: 0.45s;
 }
  .slide1 {
-	 background-image: url('https://images.unsplash.com/photo-1483068612337-c045daaca40e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=6de8746a693acc34ebe9e9a15c4c18d1');
+	 background-image: url("../img/fb-cOVER.png");
 }
  .slide2 {
 	 background-image: url('https://images.unsplash.com/photo-1489914099268-1dad649f76bf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=f21f40bb93bae58300e83f7f72ebb5a5');
@@ -2510,9 +2511,9 @@ background-color: rgba(77, 77, 77, 0.767); ;
  .up1 {
 	 z-index: 20;
 }
- .up2 {
+/*  .up2 {
 	 z-index: 40;
-}
+} */
  .steap {
 	 stroke-width: 0;
 }
