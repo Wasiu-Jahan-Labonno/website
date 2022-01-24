@@ -28,7 +28,7 @@ nav {
     display: flex;
     list-style: none;
     width: 88vw;
-
+   margin-top:1.5%;
     justify-content: center;
     align-items: flex-start;
     text-transform: uppercase;
@@ -38,8 +38,9 @@ nav {
 
 .nav-linkss li a {
     text-decoration: none;
-    margin: 0 0.7vw;
+    margin: 0 1.9vw;
     padding:20% 0%;
+    margin-top: 3%;
 }
 
 .nav-linkss li a:hover {
@@ -48,6 +49,7 @@ nav {
 
 .nav-linkss li {
     position: relative;
+ 
 }
 
 .nav-linkss li a::after {
@@ -56,9 +58,9 @@ nav {
     height: 3px;
     width: 0%;
     background-color: #cf6006;
-    position: absolute;
+    position: relative;
     transition: all ease-in-out 250ms;
-    margin: 0 0 0 10%;
+    margin: 0 0 0 19%;
 }
 
 .nav-linkss li a:hover::after {
@@ -138,8 +140,7 @@ nav {
     .nav-linkss {
         position: fixed;
         background: #131418c7;
-        color: #f2f5f7;
-      
+        color: #f2f5f7;  
         width: 100%;
         flex-direction: column;
         clip-path: circle(50px at 90% -20%);
@@ -154,7 +155,7 @@ nav {
     }
     .nav-linkss li {
         opacity: 0;
-        padding: 10% 2%;
+        padding: 3% 9%;
     
 
     }
@@ -206,4 +207,54 @@ nav {
 
 li .fadee a {
     color: #f2f5f7!important;
+}
+
+
+/* nav fixt pc mood  */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:4em;
+    width: 100%;
+    background-color: #f7b34d00;
+    box-sizing: border-box;
+    transition: background-color 1.1s ease-out;
+    color: rgb(22, 22, 22);
+    z-index: +1030;
+    font-family: head;
+    font-weight: 100;
+   
+}
+
+nav.scroll {
+    background-color: #3e3d3da2;
+    color: rgb(0, 0, 0);  
+    height: 4em;
+
+  }
+
+nav.scroll ul li a {
+    color: rgb(255, 94, 1);
+    text-align: center;
+    text-shadow: 0px 0px 1px #000000;
+
+}
+
+
+
+
+nav.scroll ul li:hover {
+    color: #c78937;
+}
+
+ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(143, 20, 20);
+    text-decoration: none;
+    padding-bottom: 10px;
 }
