@@ -2352,7 +2352,7 @@ background-color: rgba(77, 77, 77, 0.767); ;
 	 transform: translate(-9px, -8px);
 }
  .right {
-  margin-left: 23.5%;
+  margin-left: 22%;
 	 margin-top: 240px; 
 	 border: 1px solid #c22e09;
 	 background-color: transparent;
@@ -2364,7 +2364,7 @@ background-color: rgba(77, 77, 77, 0.767); ;
   color: white;
 }
  .left {
-	 margin-left: 0.5%;
+	 margin-left: 1%;
 	 margin-top: 240px;
    border: 1px solid #c22e09;
 	 background-color: transparent;
