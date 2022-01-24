@@ -2481,11 +2481,6 @@ background-color: rgba(77, 77, 77, 0.767); ;
  .streak {
 	 stroke-width: 82px;
 }
- @media (max-width: 700px) {
-	 .parent {
-		 margin-left: 1%;
-	}
-}
  
 
 /* magic card */
@@ -2530,7 +2525,7 @@ background-color: rgba(77, 77, 77, 0.767); ;
   font-size: 1.5em;
   color: rgb(88 199 250 / 0%);
   cursor: pointer;
-  font-family: cursive; 
+
 margin: auto;
 }
 .innercard{
@@ -2538,6 +2533,8 @@ margin: auto;
   width: 100%;
   z-index:10 ;
   border-radius: 6px;
+  color: white;
+  padding: 5% 7%;
 }
 
 /* .card123:hover {
