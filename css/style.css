@@ -706,10 +706,6 @@ form input.inpo1:focus {
   display: block;
   background-image: url("../img/footermain.png"), linear-gradient(90deg, rgb(254, 87, 45) 0%, rgb(230, 104, 31) 35%, rgb(223, 95, 9) 100%);
 
-
-
-
- 
 }
 .content {
   position: relative;
@@ -717,13 +713,12 @@ form input.inpo1:focus {
   right: 0;
   z-index: 0;
   text-align: center;
-
-
   color: rgb(255, 255, 255);
   font-weight: 700;
-
 }
-
+.heart{
+  color: red;
+}
 
 p a{
   text-decoration: none;
