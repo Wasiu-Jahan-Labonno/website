@@ -305,6 +305,8 @@ hr {
   position: absolute;
   content: "";
   top: 20%;
+
+  transform: translateX(-10%);
   background: url("../img/oleaon.png");
   background-size: cover;
   width: 300px;
@@ -829,7 +831,7 @@ filter: blur(8px);
   .custom-model-wrap {
     display: flex;
     width: 100%;
-    height: 600px;
+    height: auto;
     position: relative;
     color: rgb(255, 255, 255);
     font-weight: 300;
@@ -847,7 +849,7 @@ filter: blur(8px);
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     max-height: calc(100vh - 70px);
-      overflow-y: auto;
+      overflow-y: hidden;
       overflow-x: hidden;
       z-index: +1000;
   }
