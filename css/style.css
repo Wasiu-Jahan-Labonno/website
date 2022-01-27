@@ -304,18 +304,21 @@ hr {
 .logo2::after {
   position: absolute;
   content: "";
-  top: 10px;
+  top: 20%;
   background: url("../img/oleaon.png");
   background-size: cover;
-  width: 450px;
-  height: 450px;
+  width: 300px;
+  height: 300px;
   /* left: 80px; */
   background-repeat: no-repeat;
   display: inline-flex;
   padding: 0%;
   z-index: -10;
   opacity: .6;
+  display: flex;
+  justify-content: center;
   /* filter: blur(8px); */
+  left: 30%;
   
 }
 
@@ -824,9 +827,9 @@ filter: blur(8px);
  }
   
   .custom-model-wrap {
-    display: block;
+    display: flex;
     width: 100%;
-    height: 500px;
+    height: 600px;
     position: relative;
     color: rgb(255, 255, 255);
     font-weight: 300;
@@ -844,7 +847,7 @@ filter: blur(8px);
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     max-height: calc(100vh - 70px);
-      overflow-y: hidden;
+      overflow-y: auto;
       overflow-x: hidden;
       z-index: +1000;
   }
